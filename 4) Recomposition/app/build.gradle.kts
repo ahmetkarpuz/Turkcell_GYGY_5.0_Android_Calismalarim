@@ -1,16 +1,26 @@
+import java.util.Properties
 plugins {
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0"
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
+val localProperties = Properties()
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    localProperties.load(localPropertiesFile.inputStream())
+}
 android {
     namespace = "com.example.a4recomposition"
     compileSdk {
+
         version = release(36)
     }
 
     defaultConfig {
+        buildConfigField("String", "SUPABASE_URL", "\"${localProperties.getProperty("SUPABASE_URL")}\"")
+        buildConfigField("String", "SUPABASE_ANON_KEY", "\"${localProperties.getProperty("SUPABASE_ANON_KEY")}\"")
         applicationId = "com.example.a4recomposition"
         minSdk = 24
         targetSdk = 36
@@ -38,10 +48,15 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
+    //Supabase ve internet iletişim ktüütphaneleri
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:2.6.0")
+    implementation("io.ktor:ktor-client-android:2.3.12")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
