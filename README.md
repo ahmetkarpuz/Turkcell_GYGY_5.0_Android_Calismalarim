@@ -1,1 +1,1 @@
-**Turkcell_GYGY_5.0_Android_Calismalarim**
+""Turkcell GYGY 5.0 Android Kotlin eğitiminde yaptığım çalışmalar""
