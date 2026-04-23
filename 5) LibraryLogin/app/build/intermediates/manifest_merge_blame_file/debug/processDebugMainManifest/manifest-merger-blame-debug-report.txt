@@ -1,0 +1,179 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.turkcell.libraryapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.INTERNET " />
+11-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:5:5-68
+11-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:5:22-65
+12
+13    <permission
+13-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.turkcell.libraryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.turkcell.libraryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:7:5-27:19
+20        android:allowBackup="true"
+20-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:8:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.18.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\55992063d21ba473ab235b63d1d677cf\transformed\core-1.18.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:9:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:10:9-54
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:12:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:13:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:14:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.LibraryApp" >
+31-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:15:9-48
+32        <activity
+32-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:16:9-26:20
+33            android:name="com.turkcell.libraryapp.MainActivity"
+33-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:17:13-41
+34            android:exported="true"
+34-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:18:13-36
+35            android:label="@string/app_name"
+35-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:19:13-45
+36            android:theme="@style/Theme.LibraryApp" >
+36-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:20:13-52
+37            <intent-filter>
+37-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:21:13-25:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:22:17-69
+38-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:22:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:24:17-77
+40-->C:\Users\Ahmet\Downloads\gygy5-library-app-main\gygy5-library-app-main\app\src\main\AndroidManifest.xml:24:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:9:9-17:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:10:13-67
+46            android:authorities="com.turkcell.libraryapp.androidx-startup"
+46-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:11:13-68
+47            android:exported="false" >
+47-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:12:13-37
+48            <meta-data
+48-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:14:13-16:52
+49                android:name="io.github.jan.supabase.auth.SupabaseInitializer"
+49-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:15:17-79
+50                android:value="androidx.startup" />
+50-->[io.github.jan-tennert.supabase:auth-kt-android-debug:3.2.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\20eef1bf580377c0d4cbe3fa78d06b29\transformed\auth-kt-debug\AndroidManifest.xml:16:17-49
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\247b96a0b43377e53673f03ad2d0df89\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\247b96a0b43377e53673f03ad2d0df89\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\247b96a0b43377e53673f03ad2d0df89\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\6d2a4f22b8a215ea62266778156e6291\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\6d2a4f22b8a215ea62266778156e6291\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:30:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.10.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\6d2a4f22b8a215ea62266778156e6291\transformed\lifecycle-process-2.10.0\AndroidManifest.xml:31:17-49
+57            <meta-data
+57-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+58-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+59                android:value="androidx.startup" />
+59-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\f19d98138bb7407abf2ab962604a7ba9\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:29:13-31:52
+61                android:name="com.russhwolf.settings.SettingsInitializer"
+61-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\f19d98138bb7407abf2ab962604a7ba9\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:30:17-74
+62                android:value="androidx.startup" />
+62-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.3.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\f19d98138bb7407abf2ab962604a7ba9\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:31:17-49
+63        </provider>
+64
+65        <activity
+65-->[androidx.compose.ui:ui-tooling-android:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\0f85f717ba273fb0eab24fc57e443931\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
+66            android:name="androidx.compose.ui.tooling.PreviewActivity"
+66-->[androidx.compose.ui:ui-tooling-android:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\0f85f717ba273fb0eab24fc57e443931\transformed\ui-tooling\AndroidManifest.xml:24:13-71
+67            android:exported="true" />
+67-->[androidx.compose.ui:ui-tooling-android:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\0f85f717ba273fb0eab24fc57e443931\transformed\ui-tooling\AndroidManifest.xml:25:13-36
+68
+69        <uses-library
+69-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:23:9-25:40
+70            android:name="androidx.window.extensions"
+70-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:24:13-54
+71            android:required="false" />
+71-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:25:13-37
+72        <uses-library
+72-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:26:9-28:40
+73            android:name="androidx.window.sidecar"
+73-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:27:13-51
+74            android:required="false" />
+74-->[androidx.window:window:1.5.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\e59af3c8c1a23d6ec1123d73b894e992\transformed\window-1.5.0\AndroidManifest.xml:28:13-37
+75
+76        <activity
+76-->[androidx.compose.ui:ui-test-manifest:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\15800cd994e14918ac557593888a59d1\transformed\ui-test-manifest-1.10.4\AndroidManifest.xml:23:9-26:79
+77            android:name="androidx.activity.ComponentActivity"
+77-->[androidx.compose.ui:ui-test-manifest:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\15800cd994e14918ac557593888a59d1\transformed\ui-test-manifest-1.10.4\AndroidManifest.xml:24:13-63
+78            android:exported="true"
+78-->[androidx.compose.ui:ui-test-manifest:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\15800cd994e14918ac557593888a59d1\transformed\ui-test-manifest-1.10.4\AndroidManifest.xml:25:13-36
+79            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+79-->[androidx.compose.ui:ui-test-manifest:1.10.4] C:\Users\Ahmet\.gradle\caches\8.13\transforms\15800cd994e14918ac557593888a59d1\transformed\ui-test-manifest-1.10.4\AndroidManifest.xml:26:13-76
+80
+81        <receiver
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+82            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+83            android:directBootAware="false"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+84            android:enabled="true"
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+85            android:exported="true"
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+86            android:permission="android.permission.DUMP" >
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+88                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+91                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+94                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+97                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ahmet\.gradle\caches\8.13\transforms\48173921ea6aef032739d3ea89ef57f8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+98            </intent-filter>
+99        </receiver>
+100    </application>
+101
+102</manifest>
