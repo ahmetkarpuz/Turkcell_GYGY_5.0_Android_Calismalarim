@@ -34,16 +34,18 @@ fun HomeScreen(
                 strokeWidth = 2.dp,
                 color = MaterialTheme.colorScheme.onPrimary)
             books.isEmpty() -> Text("Kitaplar yüklenemedi.")
-            else -> LazyColumn(modifier = Modifier.fillMaxSize(),
-                contentPadding = PaddingValues(32.dp),
-                verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                items(books, key = {it.id})
-                {
-                    // ÖDEV 3: Bir "Kitap" kart tasarımı (ayrı composable) buradaki listede
-                    // doldurulsun.
-                    book ->
-                    Text(book.title)
+            // HomeScreen.kt dosyasındaki LazyColumn kısmı şu şekilde güncellenmeli:
+
+            else -> LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(16.dp), //Padding değerini biraz küçülttük
+                verticalArrangement = Arrangement.spacedBy(12.dp) //Kartlar arası boşluk
+            ) {
+                items(books, key = { it.id }) { book ->
+                    BookCard(book = book)
                 }
+                // ÖDEV 3: Bir "Kitap" kart tasarımı (ayrı composable) buradaki listede doldurulsun
+                   
             }
         }
     }
