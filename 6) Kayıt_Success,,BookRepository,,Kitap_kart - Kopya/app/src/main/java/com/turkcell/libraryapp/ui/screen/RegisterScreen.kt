@@ -20,6 +20,7 @@ import com.turkcell.libraryapp.ui.viewmodel.AuthViewModel
 @Composable
 fun RegisterScreen(
     onNavigateToLogin: () -> Unit,
+    onRegisterSuccess: (role: String) -> Unit,
     authViewModel: AuthViewModel
 ) {
     val authState by authViewModel.authState.collectAsState()
@@ -28,6 +29,12 @@ fun RegisterScreen(
     var fullName by remember { mutableStateOf("") }
     var studentNo by remember { mutableStateOf("") }
 
+    LaunchedEffect(authState) {                   //AuthState success old.çalışır
+        if(authState is AuthState.Success) {
+            onRegisterSuccess((authState as AuthState.Success).role)
+            authViewModel.resetState()
+        }
+    }
 
     Column(
         modifier = Modifier

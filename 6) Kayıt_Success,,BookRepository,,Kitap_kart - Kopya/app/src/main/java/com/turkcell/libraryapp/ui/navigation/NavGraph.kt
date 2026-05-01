@@ -33,7 +33,12 @@ fun NavGraph(navController: NavHostController = rememberNavController()) {
         // ÖDEV 1: Kayıt ol'a success yapısı kurulacak.
         composable(Screen.Register.route) { RegisterScreen(
             onNavigateToLogin = { navController.navigate(Screen.Login.route) },
-            authViewModel
+            onRegisterSuccess = { role ->                 //anasayfya yönlendirme 
+                navController.navigate(Screen.Homepage.route) {
+                    popUpTo(Screen.Login.route) { inclusive = true }
+                }
+            },
+            authViewModel = authViewModel
         ) }
         composable(Screen.Homepage.route) {
             HomeScreen(authViewModel, bookViewModel)
