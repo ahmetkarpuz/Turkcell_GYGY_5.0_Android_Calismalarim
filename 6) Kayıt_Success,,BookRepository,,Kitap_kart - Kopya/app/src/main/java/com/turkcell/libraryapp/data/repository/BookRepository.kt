@@ -5,6 +5,7 @@ import com.turkcell.libraryapp.data.supabase.supabase
 import io.github.jan.supabase.postgrest.postgrest
 
 class BookRepository {
+    
     suspend fun getAllBooks(): Result<List<Book>> = runCatching {
         supabase.postgrest["books"]
                 .select()
@@ -21,5 +22,29 @@ class BookRepository {
         supabase.postgrest["books"].insert(book)
     }
 
-    // ÖDEV 2: BookRepository Güncelleme, silme, arama fonksiyonlarını tanımla.
+
+    //update
+    suspend fun updateBook(id: String, updatedBook: Book): Result<Unit> = runCatching {
+        supabase.postgrest["books"].update(updatedBook) {
+            filter { eq("id", id) } // Güncellenecek kitabı ID'sine göre bulur
+        }
+    }
+
+    //kitap sil
+    suspend fun deleteBook(id: String): Result<Unit> = runCatching {
+        supabase.postgrest["books"].delete {
+            filter { eq("id", id) } 
+        }
+    }
+
+    //ktiap arama
+    suspend fun searchBooksByTitle(searchQuery: String): Result<List<Book>> = runCatching {
+        supabase.postgrest["books"]
+            .select { 
+                filter { ilike("title", "%$searchQuery%") } 
+            }
+            .decodeList<Book>()
+    }
 }
+    // ÖDEV 2: BookRepository Güncelleme, silme, arama fonksiyonlarını tanımla.
+
