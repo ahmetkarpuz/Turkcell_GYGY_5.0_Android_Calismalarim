@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -57,6 +58,9 @@ android {
         compose = true
         buildConfig = true
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
 }
 
 dependencies {
@@ -64,8 +68,8 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.ktor.client.android)
     implementation(libs.kotlinx.serialization.json)
-
-
+    implementation("io.github.jan-tennert.supabase:storage-kt:3.2.4")
+    implementation("androidx.compose.material:material-icons-extended")
 
     implementation(libs.supabase.bom)
     implementation(libs.supabase.postgrest)

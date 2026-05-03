@@ -4,6 +4,26 @@ import com.turkcell.libraryapp.data.model.Book
 import com.turkcell.libraryapp.data.supabase.supabase
 import io.github.jan.supabase.postgrest.postgrest
 
+import io.github.jan.supabase.storage.storage
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+// Örnek bir resim yükleme fonksiyonu
+suspend fun uploadImageToSupabase(fileName: String, imageBytes: ByteArray): Result<String> = runCatching {
+    withContext(Dispatchers.IO) {
+        // "book_covers" yerine Supabase'de oluşturduğun bucket'ın adını yaz
+        val bucket = supabase.storage.from("book_covers")
+
+        // Resmi Supabase'e yüklüyoruz
+        bucket.upload(fileName, imageBytes) {
+            upsert = true
+        }
+
+        // Yüklenen resmin internette gösterilebilmesi için public URL'sini alıyoruz
+        val publicUrl = bucket.publicUrl(fileName)
+        return@withContext publicUrl
+    }
+}
 class BookRepository {
     
     suspend fun getAllBooks(): Result<List<Book>> = runCatching {

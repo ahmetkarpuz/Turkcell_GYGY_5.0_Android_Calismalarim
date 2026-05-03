@@ -1,4 +1,4 @@
-package com.turkcell.libraryapp.ui.components
+package com.turkcell.libraryapp.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -17,6 +17,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.turkcell.libraryapp.data.model.Book
+
+
 
 @Composable
 fun BookCard(book: Book) {
