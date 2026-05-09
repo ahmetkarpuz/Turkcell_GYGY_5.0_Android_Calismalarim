@@ -54,7 +54,7 @@ fun BookCard(book: Book) {
 
             Spacer(modifier = Modifier.width(16.dp))
 
-            //Orta Kısım: Başlık ve Yazar
+            // Orta Kısım: Başlık ve Yazar
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = book.title,
